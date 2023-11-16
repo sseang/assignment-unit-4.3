@@ -2,14 +2,35 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 
+let basket = [];
+console.log('Basket have:', basket);
+
+
+// write if conditon to return true??
+function addItem(item) {
+    console.log('In new basket', [item]); 
+    basket.push(item);
+    return true;
+}
+
+// // console.log(`Basket is ${basket}`);
+// console.log('Adding apples (expect true)', addItem('Apple'));
+// console.log(`Basket is now ${basket}`);
+
+function listItems() {
+    for (let i = 0; i < basket.length; i++) {
+        console.log(basket);
+    }
+}
 
 
 
+function empty() {
+   basket.splice(0, basket.length);
+   console.log('Empty is:', basket);
 
 
-
-
-
+}
 
 
 // DO NOT MODIFY
