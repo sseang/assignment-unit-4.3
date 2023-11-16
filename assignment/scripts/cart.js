@@ -24,7 +24,7 @@ function listItems() {
 }
 
 
-
+//splice is new key word
 function empty() {
    basket.splice(0, basket.length);
    console.log('Empty is:', basket);
